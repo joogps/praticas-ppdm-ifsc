@@ -23,11 +23,11 @@ public class MainActivity2 extends AppCompatActivity {
         textView = findViewById(R.id.textView);
         button = findViewById(R.id.button);
 
-        textView.setText(String.valueOf(i));
+        textView.setText(Integer.toString(i));
     }
 
     public void contar(View v) {
         i++;
-        textView.setText(String.valueOf(i));
+        textView.setText(Integer.toString(i));
     }
 }
