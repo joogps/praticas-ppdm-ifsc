@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/capa"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_weight="0"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/red" />
+
+        <Space
+            android:layout_width="23dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/albumTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:fontFamily="sans-serif-medium"
+                android:text="Título"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#000000"
+                tools:text="Red (Taylor's Version)" />
+
+            <TextView
+                android:id="@+id/albumArtist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:fontFamily="sans-serif-light"
+                android:text="Artista"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#7E7E7E"
+                tools:text="Taylor Swift" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:layout_weight="0" />
+
+            <TextView
+                android:id="@+id/albumYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:fontFamily="sans-serif"
+                android:text="Ano"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#7E7E7E"
+                tools:text="2012 / 2021" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
