@@ -33,7 +33,7 @@ public class Nota {
     public String getConteudo() {
         return conteudo;
     }
-    public void setConteudo(String txt) {
+    public void setConteudo(String conteudo) {
         this.conteudo = conteudo;
     }
 }

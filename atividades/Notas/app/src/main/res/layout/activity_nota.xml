@@ -40,7 +40,15 @@
             android:id="@+id/salvarButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Salvar" />
+            android:backgroundTint="#673AB7"
+            android:text="Salvar nota" />
+
+        <Button
+            android:id="@+id/excluirButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F44336"
+            android:text="Excluir nota" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

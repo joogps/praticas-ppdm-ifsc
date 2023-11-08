@@ -2,6 +2,7 @@ package com.joogps.notas;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -44,10 +45,22 @@ public class MainActivity extends AppCompatActivity {
 
         listaNotas.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Bundle bundle = new Bundle();
+                Nota nota = (Nota)parent.getItemAtPosition(position);
+                bundle.putInt("id", nota.getId());
 
+                Intent intent = new Intent(MainActivity.this, NotaActivity.class);
+                intent.putExtras(bundle);
+                startActivity(intent);
             }
         });
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        refresh();
     }
 
     void refresh() {

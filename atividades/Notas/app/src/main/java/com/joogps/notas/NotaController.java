@@ -23,6 +23,10 @@ public class NotaController {
         return dao.deleteNota(nota);
     }
 
+    Nota getNota(int id) {
+        return dao.getNota(id);
+    }
+
     ArrayList<Nota> getNotas() {
         return dao.getNotas();
     }

@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Notas"
         tools:targetApi="34">
         <activity
+            android:name=".DetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".NotaActivity"
             android:exported="false" />
         <activity
